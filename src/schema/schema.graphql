@@ -1,0 +1,21 @@
+ type Query {
+    "Obtenemos la lista de todos los casos"
+    cases: [Case!]!
+}
+
+type Case {
+    num_caso: String
+    ent: String
+    sexo: String
+    edad: String
+    fecha_inicio: String
+    identificado: String
+    procedencia:String
+    fecha_llegada_mexico: String
+    fecha_corte: String
+    inconsistencia_nuevo: String
+    inconsistencia_nuevo_fecha: String
+    inconsistencia_omision: String
+    inconsistencia_omision_fecha_ult_aparicion: String
+}
+
