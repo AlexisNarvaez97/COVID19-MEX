@@ -9,5 +9,7 @@ export const SECRET_KEY = process.env.SECRET || 'alexis';
 
 
 export const COLLECTIONS = {
-    CONFIRMED: 'confirmed'
+    CONFIRMED: 'confirmados',
+    SUSPECT: 'sospechosos',
+    DEATHS: 'muertes'
 };

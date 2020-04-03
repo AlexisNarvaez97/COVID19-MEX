@@ -1,12 +1,18 @@
 import { IResolvers } from "graphql-tools";
 import {
-  getCases
+  getCases, getSospechosos, getMuertos
 } from "../lib/database-operations";
 
 const query: IResolvers = {
   Query: {
-    async cases(_: void, __: any, { db }): Promise<any> {
+    async confirmados(_: void, __: any, { db }): Promise<any> {
       return await getCases(db);
+    },
+    async sospechosos(_: void, __: any, { db }): Promise<any> {
+      return await getSospechosos(db);
+    },
+    async muertos(_: void, __: any, { db }): Promise<any> {
+      return await getMuertos(db);
     }
   }
 };
